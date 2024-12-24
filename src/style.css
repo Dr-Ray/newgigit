@@ -1,0 +1,72 @@
+/* Leave these when switching to tailwindcss */
+html {
+  font-family:"Inter", serif;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+}
+
+.bg-underBanner {
+  background-color: #147cd0;
+}
+
+.img-1 {
+  position: absolute;
+  top: -20px;
+  right: -100px;
+  width: 100px;
+  height: auto;
+}
+
+.img-2 {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+}
+
+.hr-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+  border: none;
+  background-color: #0071ce;
+  color: #fff;
+}
+
+.container {
+  width: 90%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media screen and(max-width:400px) {
+  .container {
+    width: 98%;
+  }
+}
+input {
+  border: none;
+  border-radius: 50px;
+}
+input:focus,
+input:active {
+  border: none;
+  outline: none;
+}
+
+/* Leave these when switching to tailwindcss */
