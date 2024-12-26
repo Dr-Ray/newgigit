@@ -21,7 +21,9 @@
           <SubmitButton msg="Login" background="#0f0" color="#eee" />
           <p class="text-center">
             Don't have an account?
-            <a href="#" class="font-bold" style="color: #0071ce">Sign Up</a>
+            <router-link to="/register" class="font-bold" style="color: #0071ce"
+              >Sign Up</router-link
+            >
           </p>
         </div>
       </form>
