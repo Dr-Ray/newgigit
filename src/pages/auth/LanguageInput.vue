@@ -32,7 +32,7 @@
 import SubmitButton from "../../components/submit_long.vue";
 import AuthComponentProvider from "../../components/authComponent.vue";
 export default {
-  name: "Login",
+  name: "LanguageInput",
   components: {
     SubmitButton,
     AuthComponentProvider,
