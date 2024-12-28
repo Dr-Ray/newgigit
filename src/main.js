@@ -16,6 +16,8 @@ import ForgottenPasswordVerify from "./pages/auth/forgotPasswordVerify.vue";
 
 import LanguageInput from "./pages/dashboard/LanguageInput.vue";
 import SkilsInput from "./pages/dashboard/skillsInput.vue";
+import DashboardHome from "./pages/dashboard/home.vue";
+import OngoingProject from "./pages/dashboard/ongoingProjectscreen.vue";
 
 const routes = [
   { path: "/", component: Landing },
@@ -29,6 +31,10 @@ const routes = [
   { path: "/verify/email", component: VerifyEmail },
   { path: "/language/", component: LanguageInput },
   { path: "/skills", component: SkilsInput },
+
+  
+  { path: "/user/dashboard/", component: DashboardHome },
+  { path: "/user/dashboard/ongoing/:id", component: OngoingProject },
 ];
 
 const router = createRouter({

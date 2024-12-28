@@ -51,7 +51,7 @@
             <div class="mt-auto">
               <p class="text-right font-bold text-white my-2">Languages</p>
               <ul class="flex justify-end gap-2">
-                <li class="text-white font-bold" style="color:font-size:16px;">En</li>
+                <li class="text-white font-bold" style="font-size:16px;">En</li>
                 <li class="font-bold" style="color:#8F9FA3;font-size:16px;">Es</li>
                 <li class="font-bold" style="color:#8F9FA3;font-size:16px;">Fr</li>
                 <li class="font-bold" style="color:#8F9FA3;font-size:16px;">De</li>
