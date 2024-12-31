@@ -1,5 +1,5 @@
 <template>
-  <div class="p-2 flex justify-between items-center">
+  <div class="py-2 px-4 flex justify-between items-center">
     <p class="font-bold">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
     <div class="flex justify-between items-center gap-8">
       <SearchWithIcon hint="Search" class="hidden md:flex">

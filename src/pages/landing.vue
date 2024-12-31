@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <div class="pb-16">
+    <div class="pb-16 mb-8">
       <div class="container">
         <NavigationHeader />
         <div class="banner">
@@ -11,7 +11,7 @@
               starts from here
             </p>
             <p
-              class="text-sm my-2 text-zinc-600 leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-slate-400"
+              class="text-sm my-2 text-zinc-600 leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-4 lg:col-span-1 dark:text-[#909090]"
             >
               Connection between Companies and Freelancers starts from here Connection
               between Companies and Freelancers starts from here
@@ -20,15 +20,29 @@
               <ButtonElememt msg="Find a job" />
               <ButtonElememt msg="Find a talent" />
             </div>
-            <img src="/u1.png" class="img img-1 hidden sm:block" alt="" />
-            <img src="/u2.png" class="img img-2" alt="" />
+            <div class="absolute bottom-0 w-full top-0 h-full z-[-1]">
+              <div class="relative w-full">
+                <div
+                  class="bg-[#F5E9CC99] absolute h-[200px] w-[200px] rounded-full"
+                  style="top: -20px; right: -130px"
+                >
+                  <img src="/u1.png" class="img img-1 hidden sm:block" alt="" />
+                </div>
+                <div
+                  class="bg-[#F5E9CC99] absolute h-[200px] w-[200px] rounded-full"
+                  style="top: 160px; left: 0px"
+                >
+                  <img src="/u2.png" class="img img-2" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div
-      class="p-2 md:h-20 mb-2 bg-blue flex items-center gap-2 md:flex-nowrap flex-wrap justify-between md:justify-evenly bg-no-repeat bg-cover"
+      class="p-2 mt-32 md:h-20 mb-2 bg-blue flex items-center gap-2 md:flex-nowrap flex-wrap justify-between md:justify-evenly bg-no-repeat bg-cover"
       style="
         background: linear-gradient(rgba(17, 121, 206, 0.92), rgba(17, 121, 206, 0.92)),
           url('/576fe9f3a4e70658a262220df348c21d.jpg');
@@ -53,7 +67,7 @@
       </div>
     </div>
 
-    <div class="container mt-8">
+    <div class="container mt-16">
       <div class="flex flex-col md:flex-row gap-3">
         <AboutComponent
           image="/0e9705a6fddac4b0764524bbb22732fb.png"
@@ -73,12 +87,12 @@
       </div>
     </div>
 
-    <div class="container mt-8">
+    <div class="container mt-32">
       <div class="mb-10">
-        <p class="text-center font-bold text-2xl">
+        <p class="text-center font-bold text-2xl text-[#6C6C6C]">
           Perfect place built to get a job by show casing your skill
         </p>
-        <p class="text-center font-bold text-sm text-slate-400 leading-8">
+        <p class="text-center font-bold text-sm text-[#909090] leading-8">
           Perfect place built to get a job by show casing your skill
         </p>
       </div>
@@ -112,7 +126,7 @@
           />
         </div>
       </div>
-      <div class="flex flex-col-reverse md:flex-row gap-2 mt-4">
+      <div class="flex flex-col-reverse md:flex-row gap-2 mt-16">
         <div
           class="w-full md:w-1/2 p-2 flex flex-col justify-center items-center relative rounded-lg"
           style="background-color: #f0f7fc"
@@ -127,7 +141,9 @@
             >
               Best freelancers search platform
             </p>
-            <p class="font-bold text-2xl">Get exports for your required field</p>
+            <p class="font-bold text-2xl text-[#424242]">
+              Get exports for your required field
+            </p>
           </div>
           <LandinglistStyle
             heading="Amazing project managemant tool"
@@ -146,14 +162,16 @@
       </div>
     </div>
 
-    <div class="container mt-8">
+    <div class="container mt-20">
       <div class="text-center mb-16">
-        <h3 class="font-bold text-4xl">2000+ satisfied customers review</h3>
-        <p class="font-light text-sm text-slate-400 leading-8">
+        <h3 class="font-bold text-4xl text-[#424242]">
+          2000+ satisfied customers review
+        </h3>
+        <p class="font-light text-sm text-[#909090] leading-8">
           Perfect place built to get a job by showcasing your skill
         </p>
       </div>
-      <div class="flex gap-2 overflow-x-auto">
+      <div class="flex justify-center gap-4 overflow-x-auto">
         <CustomerReview
           customerName="Anderson Andrew"
           customerPosition="CEO Spotify"
@@ -172,12 +190,14 @@
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row mt-8">
+    <div class="flex flex-col md:flex-row mt-16">
       <div class="w-full md:w-1/2" style="background-color: #f0f7fc; padding: 10px">
         <div class="container">
           <div class="my-8">
-            <span class="font-bold text-xl my-1">Monitor time spent on projects</span>
-            <p class="font-light text-slate-400 leading-8">
+            <span class="font-bold text-[#6C6C6C] text-xl my-1"
+              >Monitor time spent on projects</span
+            >
+            <p class="font-light text-[#909090] leading-8">
               Perfect place built to get a job by showcasing your skill
             </p>
           </div>

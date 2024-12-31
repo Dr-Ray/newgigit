@@ -26,6 +26,10 @@ import SecurityPage from "./pages/dashboard/securityPage.vue";
 import WalletPage from "./pages/dashboard/walletPage.vue";
 import CommunityPage from "./pages/dashboard/communityPage.vue";
 import FindJob from "./pages/dashboard/FindJob.vue";
+import CommunityPageMyCommunity from "./pages/dashboard/communityPageMyCommunity.vue";
+import CommunityPageEvent from "./pages/dashboard/communityPageEvent.vue";
+import CommunityPageCreateEvent from "./pages/dashboard/communityPageCreateEvent.vue";
+import CommunityPageSingleEvent from "./pages/dashboard/communityPageSingleEvent.vue";
 
 const routes = [
   { path: "/", component: Landing },
@@ -49,7 +53,13 @@ const routes = [
   { path: "/user/dashboard/notification/", component: NotificationPage },
   { path: "/user/dashboard/security/", component: SecurityPage },
   { path: "/user/dashboard/wallet/", component: WalletPage },
+
   { path: "/user/dashboard/community/", component: CommunityPage },
+  { path: "/user/dashboard/community/my-community/", component: CommunityPageMyCommunity },
+  { path: "/user/dashboard/community/event/", component: CommunityPageEvent },
+  { path: "/user/dashboard/community/event/create", component: CommunityPageCreateEvent },
+  { path: "/user/dashboard/community/event/single/:id", component: CommunityPageSingleEvent },
+
   { path: "/user/dashboard/find-a-job/", component: FindJob },
 
 ];

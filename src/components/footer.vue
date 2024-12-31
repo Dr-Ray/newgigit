@@ -1,5 +1,5 @@
 <template>
-  <footer class="mt-8 py-4 w-full" style="background-color: #002645">
+  <footer class="mt-16 py-4 w-full" style="background-color: #002645">
     <div class="container">
       <div class="flex flex-col md:flex-row justify-between">
         <div class="md:w-[400px]">

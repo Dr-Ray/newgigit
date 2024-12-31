@@ -12,7 +12,7 @@
         <img src="/logo.png" alt="" class="w-32 h-32" />
       </router-link>
       <div class="w-40 px-2 mx-auto">
-        <ul class="flex flex-col gap-5">
+        <ul class="flex flex-col gap-8">
           <li>
             <router-link
               to="/user/dashboard/"

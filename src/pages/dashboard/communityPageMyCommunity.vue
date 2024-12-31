@@ -2,7 +2,7 @@
   <DashBoardComponentProvider>
     <DashboardHeader msg="Community" />
     <div class="flex flex-col gap-4 p-2 md:flex-row md:items-center">
-      <router-link to="#">
+      <router-link to="/user/dashboard/community/">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #fff; background-color: #0071ce"
@@ -10,15 +10,15 @@
           For You
         </h5>
       </router-link>
-      <router-link to="/user/dashboard/community/my-community/">
+      <router-link to="#">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #0071ce; background-color: #d4a21b33"
         >
-          Your Communities
+          My Communities
         </h5>
       </router-link>
-      <router-link to="/user/dashboard/community/create-community/">
+      <router-link to="/user/dashboard/community/create-community">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #0071ce; background-color: #d4a21b33"
@@ -29,56 +29,26 @@
     </div>
     <div class="flex">
       <div class="w-full my-4 flex flex-col">
-        <div class="py-4 px-4">
-          <div class="flex justify-between items-center gap-2">
-            <img src="/u4.png" alt="" class="h-8 w-8 rounded-full object-cover" />
-            <div
-              class="rounded-full w-full bg-white flex items-center"
-              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
-            >
-              <input
-                type="text"
-                placeholder="What’s on your mind today"
-                class="w-full py-3 px-2"
-                name=""
-              />
+        <div class="w-full bg-white py-3 px-2 flex flex-col gap-5">
+          <p>Communities for you</p>
+          <div class="" v-for="post in posts">
+            <div class="flex justify-between items-center gap-4">
+              <div class="flex items-center gap-4">
+                <img src="/u4.png" class="h-20 w-20 rounded-full object-cover" alt="" />
+                <div>
+                  <h2 class="font-bold text-2xl">Design talks</h2>
+                  <div class="flex items-center gap-4">
+                    <p class="text-xs font-light text-light">Ui and Ux design</p>
+                    <div class="flex items-center gap-3">
+                      <ion-icon name="people-outline"></ion-icon>
+                      <p class="text-xs font-light text-light">2000 members</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button>View</button>
             </div>
-            <button class="w-28 h-10" type="button">Post</button>
           </div>
-          <div class="flex items-center px-10 py-1 gap-3">
-            <router-link to="#" class="flex items-center gap-2">
-              <div
-                class="p-2 rounded-full w-fit bg-[#d4a21b33] flex justify-center items-center"
-              >
-                <ion-icon name="image-outline"></ion-icon>
-              </div>
-              <p class="text-sm font-medium">Gallery</p>
-            </router-link>
-            <router-link to="#" class="flex items-center gap-3">
-              <div
-                class="p-2 rounded-full w-fit bg-[#d4a21b33] flex justify-center items-center"
-              >
-                <ion-icon name="create-outline"></ion-icon>
-              </div>
-              <p class="text-sm font-medium">Gallery</p>
-            </router-link>
-          </div>
-        </div>
-        <div v-for="post in posts" class="mt-8">
-          <CommunityPostLeft
-            message="How do we feel about Customer Success Manager in tech as an exit? My gut tells
-          me it’s chill and decently paying but kinda menial customer service firefighting
-          type work and might pigeonhole me/be limt How do we feel about Customer Success
-          Manager in tech as an exit? My gut tells me it’s chill and decently paying but
-          kinda menial customer service firefighting type work and might pigeonhole me/be
-          lim"
-            :name="post"
-            likeCount="15"
-            commentCount="20"
-            moredetails="UI and UX design"
-            PostTime="4 min"
-            img="/u4.png"
-          />
         </div>
       </div>
       <div class="md:flex flex-col gap-6 px-3 w-[450px] my-4 hidden">
@@ -126,14 +96,14 @@
             </div>
           </div>
           <router-link
-            to="/user/dashboard/community/event/"
+            to="/user/dashboard/community/my-community/"
             class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
           >
-            See all
+            Explore Community
           </router-link>
         </div>
         <div
-          class="border-2 w-full md:w-[420px] bg-white py-3 px-2 flex flex-col rounded-2xl gap-5"
+          class="border-2 w-full md:w-[420px] top-8 left-[-380px] bg-white py-3 px-2 flex flex-col rounded-2xl gap-5"
         >
           <p>Communities for you</p>
           <div class="" v-for="post in posts">
@@ -164,7 +134,7 @@ import DashboardHeader from "./components/dashboardHeader.vue";
 import SearchWithIcon from "./components/searchWithIcon.vue";
 import CommunityPostLeft from "./components/communityPostLeft.vue";
 export default {
-  name: "CommunityPage",
+  name: "CommunityPageMyCommunity",
   components: {
     DashBoardComponentProvider,
     DashboardHeader,

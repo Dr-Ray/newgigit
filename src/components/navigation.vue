@@ -1,5 +1,5 @@
 <template>
-  <div class="hr-row w-full justify-between h-14">
+  <div class="hr-row w-full justify-between">
     <div class="hr-row gap-2">
       <router-link to="/">
         <img src="/logo.png" alt="logo" style="width: auto; height: 100px" />
