@@ -2,7 +2,7 @@
   <div class="p-2 flex justify-between items-center">
     <p class="font-bold">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
     <div class="flex justify-between items-center gap-8">
-      <SearchWithIcon hint="Search">
+      <SearchWithIcon hint="Search" class="hidden md:flex">
         <ion-icon name="search"></ion-icon>
       </SearchWithIcon>
 
@@ -13,6 +13,7 @@
         ></ion-icon>
         <ion-icon name="person" @click="openProfileBar = !openProfileBar"></ion-icon>
 
+        <ion-icon name="menu" class="block md:hidden"></ion-icon>
         <!-- Profile dropdown -->
         <div
           :class="[openProfileBar ? 'flex flex-col' : 'hidden']"
