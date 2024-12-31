@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full h-screen overflow-hidden">
     <div
-      class="relative w-64 flex flex-col h-full py-4 px-2"
+      class="relative hidden w-64 md:flex flex-col h-full py-4 px-2"
       style="
         background: linear-gradient(rgba(17, 121, 206, 0.92), rgba(17, 121, 206, 0.92)),
           url('/576fe9f3a4e70658a262220df348c21d.jpg');
@@ -15,8 +15,8 @@
         <ul class="flex flex-col gap-5">
           <li>
             <router-link
-              to="#"
-              class="font-bold px-2 py-2 text-white bg-slate-500 rounded-3xl flex items-center gap-1"
+              to="/user/dashboard/"
+              class="font-bold px-4 py-2 text-white flex items-center gap-1 hover:bg-[#639AC3] rounded-3xl"
             >
               <ion-icon name="grid-outline"></ion-icon>
               Dashboard
@@ -24,8 +24,8 @@
           </li>
           <li>
             <router-link
-              to="#"
-              class="text-white font-bold px-4 py-2 flex items-center gap-1"
+              to="/user/dashboard/find-a-job/"
+              class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="briefcase-outline"></ion-icon>
               Find a Job
@@ -33,8 +33,8 @@
           </li>
           <li>
             <router-link
-              to="#"
-              class="text-white font-bold px-4 py-2 flex items-center gap-1"
+              to="/user/dashboard/community/"
+              class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="people-outline"></ion-icon>
               Community
@@ -42,8 +42,8 @@
           </li>
           <li>
             <router-link
-              to="#"
-              class="text-white font-bold px-4 py-2 flex items-center gap-1"
+              to="/user/dashboard/wallet/"
+              class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="wallet-outline"></ion-icon>
               Wallet
@@ -51,8 +51,8 @@
           </li>
           <li>
             <router-link
-              to="#"
-              class="text-white font-bold px-4 py-2 flex items-center gap-1"
+              to="/user/dashboard/message/"
+              class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="chatbubbles-outline"></ion-icon>
               Message
@@ -60,8 +60,8 @@
           </li>
           <li>
             <router-link
-              to="#"
-              class="text-white font-bold px-4 py-2 flex items-center gap-1"
+              to="/user/dashboard/security/"
+              class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="bag-check-outline"></ion-icon>
               Security

@@ -1,14 +1,10 @@
 <template>
   <div class="p-2 flex justify-between items-center">
-    <p class="font-bold">Hello, Virtue Andrew</p>
+    <p class="font-bold">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
     <div class="flex justify-between items-center gap-8">
-      <div
-        class="rounded-full w-full bg-white flex gap-4 pr-4 items-center"
-        style="background-color: #cce3f533; border: 1px solid #d3d3d3"
-      >
-        <input type="text" placeholder="Email address" class="w-full p-1 px-2" name="" />
+      <SearchWithIcon hint="Search">
         <ion-icon name="search"></ion-icon>
-      </div>
+      </SearchWithIcon>
 
       <div class="flex gap-2 relative">
         <ion-icon
@@ -48,11 +44,17 @@
         <!-- Notification dropdown -->
         <div
           :class="[openNotificationBar ? 'flex flex-col' : 'hidden']"
-          class="absolute shadow-lg w-[420px] h-[200px] top-8 left-[-380px] bg-white py-3 px-2 flex flex-col rounded-lg gap-5"
+          class="absolute shadow-lg w-full md:w-[420px] h-[200px] top-8 left-[-380px] bg-white py-3 px-2 flex flex-col rounded-lg gap-5"
         >
           <div class="flex justify-between">
             <h4 class="text-sm font-bold">Notifications</h4>
-            <h5 class="text-sm font-medium pr-4" style="color: #0071ce">See more</h5>
+            <router-link
+              class="text-sm font-medium pr-4"
+              style="color: #0071ce"
+              to="/user/dashboard/notification/"
+            >
+              See more
+            </router-link>
           </div>
           <div class="flex flex-col gap-3 px-4">
             <div class="flex justify-between items-center">
@@ -85,6 +87,7 @@
 </template>
 
 <script>
+import SearchWithIcon from "./searchWithIcon.vue";
 export default {
   name: "DashboardHeader",
   data() {
@@ -93,6 +96,10 @@ export default {
       openProfileBar: false,
     };
   },
+  props: {
+    msg: String,
+  },
+  components: { SearchWithIcon },
 };
 </script>
 

@@ -9,7 +9,10 @@
       </div>
       <form class="flex flex-col justify-evenly h-80 mt-8">
         <div class="flex flex-col gap-8">
-          <div class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center" style="background-color: #cce3f533; border: 1px solid #d3d3d3">
+          <div
+            class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+            style="background-color: #cce3f533; border: 1px solid #d3d3d3"
+          >
             <ion-icon name="mail"></ion-icon>
             <input type="text" placeholder="Email address" class="w-full p-1" name="" />
           </div>
@@ -25,7 +28,9 @@
               name=""
             />
           </div>
-          <p class="text-right">forgotten password?</p>
+          <router-link to="/password/forgot">
+            <p class="text-right">forgotten password?</p>
+          </router-link>
         </div>
         <div class="mt-auto">
           <SubmitButton msg="Login" background="#0f0" color="#eee" />

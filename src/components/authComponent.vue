@@ -1,7 +1,10 @@
 <template>
+  <div class="container md:hidden">
+    <NavigationHeader />
+  </div>
   <div class="flex w-full h-screen overflow-hidden">
     <div
-      class="relative w-1/2 flex flex-col justify-between h-full py-4 px-2"
+      class="relative w-1/2 hidden md:flex flex-col justify-between h-full py-4 px-2"
       style="
         background: linear-gradient(rgba(17, 121, 206, 0.92), rgba(17, 121, 206, 0.92)),
           url('/576fe9f3a4e70658a262220df348c21d.jpg');
@@ -32,7 +35,11 @@
   </div>
 </template>
 <script>
+import NavigationHeader from "./navigation.vue";
 export default {
   name: "AuthComponentProvider",
+  components: {
+    NavigationHeader,
+  },
 };
 </script>
