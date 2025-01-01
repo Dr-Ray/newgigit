@@ -3,7 +3,7 @@
     <DashboardHeader msg="Create Task" />
     <div class="w-full p-2">
       <router-link
-        to="/user/dashboard/"
+        to="/freelancer/dashboard/"
         class="text-sm font-medium p-2 rounded-xl w-full my-8 flex gap-3 items-center"
         style="color: #0071ce; background-color: #d4a21b33"
       >
@@ -39,7 +39,6 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <!-- <ButtonElement msg="Mark as Done" /> -->
           </div>
         </div>
         <button class="w-full mt-12">Mark as done</button>
@@ -55,7 +54,6 @@ import ProfileDetails from "./components/userProfiledetails.vue";
 import ProfileDetailsRight from "./components/profileRight.vue";
 import TaskLibs from "./components/myListTasks.vue";
 import TaskLibsRight from "./components/myListTaskRight.vue";
-import ButtonElement from "../../components/button.vue";
 
 export default {
   name: "OngoingProjectMarkAsDone",
@@ -66,7 +64,6 @@ export default {
     TaskLibs,
     TaskLibsRight,
     ProfileDetailsRight,
-    ButtonElement,
   },
 };
 </script>

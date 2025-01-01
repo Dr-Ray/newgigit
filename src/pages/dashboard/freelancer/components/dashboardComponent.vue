@@ -15,7 +15,7 @@
         <ul class="flex flex-col gap-8">
           <li>
             <router-link
-              to="/user/dashboard/"
+              to="/freelancer/dashboard/"
               class="font-bold px-4 py-2 text-white flex items-center gap-1 hover:bg-[#639AC3] rounded-3xl"
             >
               <ion-icon name="grid-outline"></ion-icon>
@@ -24,7 +24,7 @@
           </li>
           <li>
             <router-link
-              to="/user/dashboard/find-a-job/"
+              to="/freelancer/dashboard/find-a-job/"
               class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="briefcase-outline"></ion-icon>
@@ -33,7 +33,7 @@
           </li>
           <li>
             <router-link
-              to="/user/dashboard/community/"
+              to="/freelancer/dashboard/community/"
               class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="people-outline"></ion-icon>
@@ -42,7 +42,7 @@
           </li>
           <li>
             <router-link
-              to="/user/dashboard/wallet/"
+              to="/freelancer/dashboard/wallet/"
               class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="wallet-outline"></ion-icon>
@@ -51,7 +51,7 @@
           </li>
           <li>
             <router-link
-              to="/user/dashboard/message/"
+              to="/freelancer/dashboard/message/"
               class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="chatbubbles-outline"></ion-icon>
@@ -60,7 +60,7 @@
           </li>
           <li>
             <router-link
-              to="/user/dashboard/security/"
+              to="/freelancer/dashboard/security/"
               class="text-white font-bold px-4 py-2 flex items-center gap-1 rounded-3xl hover:bg-[#639AC3]"
             >
               <ion-icon name="bag-check-outline"></ion-icon>

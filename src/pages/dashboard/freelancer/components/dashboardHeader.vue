@@ -52,7 +52,7 @@
             <router-link
               class="text-sm font-medium pr-4"
               style="color: #0071ce"
-              to="/user/dashboard/notification/"
+              to="/freelancer/dashboard/notification/"
             >
               See more
             </router-link>

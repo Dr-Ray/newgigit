@@ -16,19 +16,15 @@
           {{ msg }}
           <h5 class="text-sm font-medium pr-4" style="color: #0071ce">See more</h5>
         </div>
-        <ButtonElememt msg="Check it out" class="mt-4" />
+        <button class="mt-4">Check it out</button>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import ButtonElememt from "../../../components/button.vue";
 export default {
   name: "TaskLibsRight",
-  components: {
-    ButtonElememt,
-  },
   props: {
     msg: String,
     business: String,

@@ -10,7 +10,7 @@
           For You
         </h5>
       </router-link>
-      <router-link to="/user/dashboard/community/my-community/">
+      <router-link to="/freelancer/dashboard/community/my-community/">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #0071ce; background-color: #d4a21b33"
@@ -18,7 +18,7 @@
           Your Communities
         </h5>
       </router-link>
-      <router-link to="/user/dashboard/community/create-community/">
+      <router-link to="/freelancer/dashboard/community/create-community/">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #0071ce; background-color: #d4a21b33"
@@ -90,7 +90,7 @@
             <router-link
               class="text-sm font-medium pr-4"
               style="color: #0071ce"
-              to="/user/dashboard/community/event/create/"
+              to="/freelancer/dashboard/community/event/create/"
             >
               Create Event
             </router-link>
@@ -126,7 +126,7 @@
             </div>
           </div>
           <router-link
-            to="/user/dashboard/community/event/"
+            to="/freelancer/dashboard/community/event/"
             class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
           >
             See all

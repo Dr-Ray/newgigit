@@ -4,44 +4,53 @@
     <div class="flex">
       <div class="w-full my-4 flex flex-col p-2">
         <router-link
-          to="/user/dashboard/"
+          to="/freelancer/dashboard/"
           class="text-sm font-medium p-2 rounded-xl w-full flex gap-3 items-center mb-8"
           style="color: #0071ce; background-color: #d4a21b33"
         >
           <ion-icon name="caret-back-outline"></ion-icon>
           <p>Go back</p>
         </router-link>
-        <div class="border-2 w-full bg-white py-3 px-2 flex flex-col rounded-2xl gap-5">
-          <div class="flex justify-between">
-            <h4 class="text-sm font-bold">Events for you</h4>
-            <router-link
-              class="text-sm font-medium pr-4"
-              style="color: #0071ce"
-              to="/user/dashboard/community/event/create/"
+        <div class="w-full bg-white py-3 px-2 flex flex-col rounded-2xl gap-5">
+          <form action="" class="flex flex-col gap-6">
+            <div
+              class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
             >
-              Create Event
-            </router-link>
-          </div>
-          <div class="my-4" v-for="post in posts">
-            <router-link
-              to="/user/dashboard/community/event/single/1"
-              class="flex flex-col gap-1 px-4"
+              <ion-icon name="person"></ion-icon>
+              <input type="text" placeholder="Event title" class="w-full p-1" name="" />
+            </div>
+            <div
+              class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
             >
-              <p class="font-medium text-[#0071ce] text-xs">Ongoing</p>
-              <div class="flex gap-4 items-center">
-                <div class="flex flex-col justify-center">
-                  <p class="text-[#909090] font-medium text-sm">Feb</p>
-                  <h3 class="text-2xl font-bold text-[606060] text-center">3</h3>
-                </div>
-                <div class="">
-                  <p class="text-xl font-bold text-[#606060]">
-                    Getting your first programming gig
-                  </p>
-                  <p class="text-xs font-medium">5 hours ago</p>
-                </div>
-              </div>
-            </router-link>
-          </div>
+              <input
+                type="text"
+                placeholder="Event Description"
+                class="w-full p-1"
+                name=""
+              />
+            </div>
+            <div
+              class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
+            >
+              <input type="text" placeholder="Event Tags" class="w-full p-1" name="" />
+            </div>
+            <div
+              class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
+            >
+              <input type="text" placeholder="Date" class="w-full p-1" name="" />
+            </div>
+            <div
+              class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
+              style="background-color: #cce3f533; border: 1px solid #d3d3d3"
+            >
+              <input type="text" placeholder="Time" class="w-full p-1" name="" />
+            </div>
+            <button class="w-full" type="submit">Create Event</button>
+          </form>
         </div>
       </div>
       <div class="md:flex flex-col gap-6 px-3 w-[450px] my-4 hidden">
@@ -86,7 +95,7 @@ import DashboardHeader from "./components/dashboardHeader.vue";
 import SearchWithIcon from "./components/searchWithIcon.vue";
 import CommunityPostLeft from "./components/communityPostLeft.vue";
 export default {
-  name: "CommunityPageEvent",
+  name: "CommunityPageCreateEvent",
   components: {
     DashBoardComponentProvider,
     DashboardHeader,

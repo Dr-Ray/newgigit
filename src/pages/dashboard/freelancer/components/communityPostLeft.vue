@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/user/dashboard/ongoing/1" class="mt-8">
+  <router-link to="/freelancer/dashboard/ongoing/1" class="mt-8">
     <div
       class="w-full rounded-xl flex flex-col gap-5 p-4"
       style="background-color: #cce3f50d"

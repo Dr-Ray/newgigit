@@ -2,7 +2,7 @@
   <DashBoardComponentProvider>
     <DashboardHeader msg="Community" />
     <div class="flex flex-col gap-4 p-2 md:flex-row md:items-center">
-      <router-link to="/user/dashboard/community/">
+      <router-link to="/freelancer/dashboard/community/">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #fff; background-color: #0071ce"
@@ -18,7 +18,7 @@
           My Communities
         </h5>
       </router-link>
-      <router-link to="/user/dashboard/community/create-community">
+      <router-link to="/freelancer/dashboard/community/create-community">
         <h5
           class="text-sm font-medium p-2 rounded-full w-fit"
           style="color: #0071ce; background-color: #d4a21b33"
@@ -60,7 +60,7 @@
             <router-link
               class="text-sm font-medium pr-4"
               style="color: #0071ce"
-              to="/user/dashboard/community/event/create/"
+              to="/freelancer/dashboard/community/event/create/"
             >
               Create Event
             </router-link>
@@ -96,7 +96,7 @@
             </div>
           </div>
           <router-link
-            to="/user/dashboard/community/my-community/"
+            to="/freelancer/dashboard/community/my-community/"
             class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
           >
             Explore Community

@@ -16,20 +16,22 @@ import ForgottenPasswordVerify from "./pages/auth/forgotPasswordVerify.vue";
 
 import LanguageInput from "./pages/dashboard/LanguageInput.vue";
 import SkilsInput from "./pages/dashboard/skillsInput.vue";
-import DashboardHome from "./pages/dashboard/home.vue";
-import MessagingPage from "./pages/dashboard/chatMessaging.vue";
-import OngoingProject from "./pages/dashboard/ongoingProjectscreen.vue";
-import EscrowPaymentOngoingProject from "./pages/dashboard/escrowPaymentOngoing.vue";
-import OngoingProjectMarkAsDone from "./pages/dashboard/OngoingMarkAsDone.vue";
-import NotificationPage from "./pages/dashboard/notificationPage.vue";
-import SecurityPage from "./pages/dashboard/securityPage.vue";
-import WalletPage from "./pages/dashboard/walletPage.vue";
-import CommunityPage from "./pages/dashboard/communityPage.vue";
-import FindJob from "./pages/dashboard/FindJob.vue";
-import CommunityPageMyCommunity from "./pages/dashboard/communityPageMyCommunity.vue";
-import CommunityPageEvent from "./pages/dashboard/communityPageEvent.vue";
-import CommunityPageCreateEvent from "./pages/dashboard/communityPageCreateEvent.vue";
-import CommunityPageSingleEvent from "./pages/dashboard/communityPageSingleEvent.vue";
+
+import DashboardHome from "./pages/dashboard/freelancer/home.vue";
+import MessagingPage from "./pages/dashboard/freelancer/chatMessaging.vue";
+import OngoingProject from "./pages/dashboard/freelancer/ongoingProjectscreen.vue";
+import EscrowPaymentOngoingProject from "./pages/dashboard/freelancer/escrowPaymentOngoing.vue";
+import OngoingProjectMarkAsDone from "./pages/dashboard/freelancer/OngoingMarkAsDone.vue";
+import NotificationPage from "./pages/dashboard/freelancer/notificationPage.vue";
+import SecurityPage from "./pages/dashboard/freelancer/securityPage.vue";
+import WalletPage from "./pages/dashboard/freelancer/walletPage.vue";
+import CommunityPage from "./pages/dashboard/freelancer/communityPage.vue";
+import FindJob from "./pages/dashboard/freelancer/FindJob.vue";
+import CommunityPageMyCommunity from "./pages/dashboard/freelancer/communityPageMyCommunity.vue";
+import CommunityPageEvent from "./pages/dashboard/freelancer/communityPageEvent.vue";
+import CommunityPageCreateEvent from "./pages/dashboard/freelancer/communityPageCreateEvent.vue";
+import CommunityPageSingleEvent from "./pages/dashboard/freelancer/communityPageSingleEvent.vue";
+import PageNotFound from './pages/404.vue';
 
 const routes = [
   { path: "/", component: Landing },
@@ -44,23 +46,26 @@ const routes = [
   { path: "/language/", component: LanguageInput },
   { path: "/skills/", component: SkilsInput },
   
-  { path: "/user/dashboard/", component: DashboardHome },
-  { path: "/user/dashboard/ongoing/:id", component: OngoingProject },
-  { path: "/user/dashboard/ongoing/escrow/payment/:id", component: EscrowPaymentOngoingProject },
-  { path: "/user/dashboard/ongoing/markasdone/:id", component: OngoingProjectMarkAsDone },
+  { path: "/freelancer/dashboard/", component: DashboardHome },
+  { path: "/freelancer/dashboard/ongoing/:id", component: OngoingProject },
+  { path: "/freelancer/dashboard/ongoing/escrow/payment/:id", component: EscrowPaymentOngoingProject },
+  { path: "/freelancer/dashboard/ongoing/markasdone/:id", component: OngoingProjectMarkAsDone },
 
-  { path: "/user/dashboard/message/", component: MessagingPage },
-  { path: "/user/dashboard/notification/", component: NotificationPage },
-  { path: "/user/dashboard/security/", component: SecurityPage },
-  { path: "/user/dashboard/wallet/", component: WalletPage },
+  { path: "/freelancer/dashboard/message/", component: MessagingPage },
+  { path: "/freelancer/dashboard/notification/", component: NotificationPage },
+  { path: "/freelancer/dashboard/security/", component: SecurityPage },
+  { path: "/freelancer/dashboard/wallet/", component: WalletPage },
 
-  { path: "/user/dashboard/community/", component: CommunityPage },
-  { path: "/user/dashboard/community/my-community/", component: CommunityPageMyCommunity },
-  { path: "/user/dashboard/community/event/", component: CommunityPageEvent },
-  { path: "/user/dashboard/community/event/create", component: CommunityPageCreateEvent },
-  { path: "/user/dashboard/community/event/single/:id", component: CommunityPageSingleEvent },
+  { path: "/freelancer/dashboard/community/", component: CommunityPage },
+  { path: "/freelancer/dashboard/community/my-community/", component: CommunityPageMyCommunity },
+  { path: "/freelancer/dashboard/community/event/", component: CommunityPageEvent },
+  { path: "/freelancer/dashboard/community/event/create", component: CommunityPageCreateEvent },
+  { path: "/freelancer/dashboard/community/event/single/:id", component: CommunityPageSingleEvent },
 
-  { path: "/user/dashboard/find-a-job/", component: FindJob },
+  { path: "/freelancer/dashboard/find-a-job/", component: FindJob },
+  // { path: "/*", component:  PageNotFound},
+
+  { path: "/:pathMatch(.*)*", component: PageNotFound }
 
 ];
 

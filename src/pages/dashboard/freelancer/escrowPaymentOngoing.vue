@@ -3,7 +3,7 @@
     <DashboardHeader />
     <div class="w-full p-2">
       <router-link
-        to="/user/dashboard/"
+        to="/freelancer/dashboard/"
         class="text-sm font-medium p-2 rounded-xl w-full my-8 flex gap-3 items-center"
         style="color: #0071ce; background-color: #d4a21b33"
       >
@@ -139,7 +139,6 @@ import ProfileDetails from "./components/userProfiledetails.vue";
 import ProfileDetailsRight from "./components/profileRight.vue";
 import TaskLibs from "./components/myListTasks.vue";
 import TaskLibsRight from "./components/myListTaskRight.vue";
-import ButtonElement from "../../components/button.vue";
 
 export default {
   name: "EscrowPaymentOngoingProject",
@@ -150,7 +149,6 @@ export default {
     TaskLibs,
     TaskLibsRight,
     ProfileDetailsRight,
-    ButtonElement,
   },
 };
 </script>

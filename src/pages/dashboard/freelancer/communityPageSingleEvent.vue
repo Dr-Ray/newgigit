@@ -5,7 +5,7 @@
     <div class="flex">
       <div class="w-full my-4 flex flex-col p-2">
         <router-link
-          to="/user/dashboard/"
+          to="/freelancer/dashboard/"
           class="text-sm font-medium p-2 rounded-xl w-full flex gap-3 items-center mb-8"
           style="color: #0071ce; background-color: #d4a21b33"
         >
@@ -170,7 +170,7 @@
             <router-link
               class="text-sm font-medium pr-4"
               style="color: #0071ce"
-              to="/user/dashboard/community/event/"
+              to="/freelancer/dashboard/community/event/"
             >
               Create Event
             </router-link>

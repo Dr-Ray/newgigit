@@ -3,7 +3,7 @@
     <DashboardHeader />
     <div class="w-full p-2">
       <router-link
-        to="/user/dashboard/"
+        to="/freelancer/dashboard/"
         class="text-sm font-medium p-2 rounded-xl w-full my-8 flex gap-3 items-center"
         style="color: #0071ce; background-color: #d4a21b33"
       >
@@ -37,7 +37,7 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <ButtonElement msg="Mark as done" />
+            <button>Mark as done</button>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-2 flex flex-col gap-5 my-3">
@@ -50,7 +50,7 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <ButtonElement msg="Mark as done" />
+            <button>Mark as done</button>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-2 flex flex-col gap-5 my-3">
@@ -63,7 +63,7 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <ButtonElement msg="Mark as done" />
+            <button>Mark as done</button>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-6 flex flex-col gap-5 my-3">
@@ -76,7 +76,7 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <ButtonElement msg="Mark as done" />
+            <button>Mark as done</button>
           </div>
         </div>
       </div>
@@ -135,7 +135,6 @@ import ProfileDetails from "./components/userProfiledetails.vue";
 import ProfileDetailsRight from "./components/profileRight.vue";
 import TaskLibs from "./components/myListTasks.vue";
 import TaskLibsRight from "./components/myListTaskRight.vue";
-import ButtonElement from "../../components/button.vue";
 
 export default {
   name: "OngoingProject",
@@ -146,7 +145,6 @@ export default {
     TaskLibs,
     TaskLibsRight,
     ProfileDetailsRight,
-    ButtonElement,
   },
 };
 </script>

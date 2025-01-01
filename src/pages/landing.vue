@@ -5,7 +5,7 @@
         <NavigationHeader />
         <div class="banner">
           <div class="relative text-center mx-auto md:w-[600px] w-full">
-            <p class="text-2xl text-zinc-900 font-bold">
+            <p class="text-3xl text-zinc-900 font-bold">
               Connection between <span style="color: #d4a21b">gigs</span> and
               <span style="color: #d4a21b">Freelancers</span> <br />
               starts from here
