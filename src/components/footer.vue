@@ -4,7 +4,7 @@
       <div class="flex flex-col md:flex-row justify-between">
         <div class="md:w-[400px]">
           <div>
-            <img src="/f615f63858fc948dfeffd5ae23acc126.png" class="w-auto h-28" alt="" />
+            <img src="/Gigitright White PNG.png" class="w-auto h-28" alt="" />
             <div>
               <p class="leading-5 font-medium" style="color: #8f9fa3; font-size: 16px">
                 The first free end-to-end analytics service for the site, designed to work

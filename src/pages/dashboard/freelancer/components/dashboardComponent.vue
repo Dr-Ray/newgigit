@@ -70,6 +70,11 @@
           </li>
         </ul>
       </div>
+      <div
+        :class="[openBar ? 'w-full' : 'w-0']"
+        class="fixed z-[-1] h-full top-0 left-0"
+        @click="openBar = !openBar"
+      ></div>
     </div>
     <!-- Small Screen -->
     <div

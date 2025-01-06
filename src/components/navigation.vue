@@ -25,6 +25,9 @@
           background-position: center;
         "
       >
+        <router-link to="/" class="font-bold">
+          <img src="/Gigitright White PNG.png" alt="" class="w-32 h-32" />
+        </router-link>
         <ul class="h-full px-3 flex flex-col gap-4 py-4">
           <li class="text-base text-zinc-900 font-bold">Home</li>
           <li class="text-base text-zinc-500 hover:text-zinc-900 font-bold">Find work</li>
