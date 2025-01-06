@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Hello Event" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Hello Event" @toggleBar="togglebar($event)"/>
 
     <div class="flex">
       <div class="w-full my-4 flex flex-col p-2">
@@ -206,7 +206,7 @@
             </div>
           </div>
           <router-link
-            to=""
+            to="#"
             class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
           >
             Explore Community

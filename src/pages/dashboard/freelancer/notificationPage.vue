@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Notification" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Notification" @toggleBar="togglebar($event)" />
     <div class="flex flex-col gap-4 p-2">
       <NotificationComponent day="Today" />
       <NotificationComponent day="Yesterday" />

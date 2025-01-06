@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Create Task" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Create Task" @toggleBar="togglebar($event)"/>
     <div class="w-full p-2">
       <router-link
         to="/freelancer/dashboard/"

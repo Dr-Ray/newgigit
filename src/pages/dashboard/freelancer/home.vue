@@ -1,9 +1,17 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader />
-    <div class="flex px-3 py-2 gap-2">
-      <div class="w-3/5 my-4">
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader @toggleBar="togglebar($event)" />
+    <div class="flex flex-col px-3 py-2 gap-2 md:flex-row">
+      <div class="w-full md:w-3/5 my-4">
         <ProfileDetails img="/u4.png" name="BILL ANIEKAN" position="UI/UX Designer" />
+      </div>
+      <div class="w-full md:w-2/5 my-4">
+        <ProfileDetailsRight balance="12,000,000" />
+      </div>
+    </div>
+
+    <div class="flex flex-col px-3 py-2 gap-2 md:flex-row">
+      <div class="w-full md:w-3/5 my-4">
         <h5
           class="text-sm font-medium p-2 rounded-xl w-fit my-8"
           style="color: #0071ce; background-color: #d4a21b33"
@@ -25,8 +33,7 @@
           payment="50% payment done"
         />
       </div>
-      <div class="w-2/5 my-4">
-        <ProfileDetailsRight balance="12,000,000" />
+      <div class="w-full md:w-2/5 my-4">
         <h5
           class="text-sm font-medium p-2 rounded-xl w-fit my-8"
           style="color: #0071ce; background-color: #d4a21b33"

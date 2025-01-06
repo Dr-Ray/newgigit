@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Event" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Event" @toggleBar="togglebar($event)" />
     <div class="flex">
       <div class="w-full my-4 flex flex-col p-2">
         <router-link
@@ -11,7 +11,7 @@
           <ion-icon name="caret-back-outline"></ion-icon>
           <p>Go back</p>
         </router-link>
-        <div class="w-full bg-white py-3 px-2 flex flex-col rounded-2xl gap-5">
+        <div class="w-full bg-white py-3 px-2">
           <form action="" class="flex flex-col gap-6">
             <div
               class="rounded-full w-full bg-white flex gap-4 px-4 py-2 items-center"
@@ -61,7 +61,7 @@
             <p>Communities for you</p>
 
             <router-link
-              to=""
+              to="#"
               class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
             >
               Explore Community

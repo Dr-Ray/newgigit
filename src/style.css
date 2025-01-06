@@ -58,6 +58,8 @@ button {
 input {
   border: none;
   border-radius: 50px;
+  /* background-color: #cce3f533; */
+  background-color: transparent;
 }
 input:focus,
 input:active {

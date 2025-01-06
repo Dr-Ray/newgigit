@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Event" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Event" @toggleBar="togglebar($event)" />
     <div class="flex">
       <div class="w-full my-4 flex flex-col p-2">
         <router-link
@@ -52,7 +52,7 @@
             <p>Communities for you</p>
 
             <router-link
-              to=""
+              to="#"
               class="text-right text-[#0071ce] text-sm font-medium p-2 rounded-full"
             >
               Explore Community

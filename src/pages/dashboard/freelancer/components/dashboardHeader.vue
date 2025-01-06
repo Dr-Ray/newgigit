@@ -1,51 +1,57 @@
 <template>
   <div class="py-2 px-4 flex justify-between items-center">
-    <p class="font-bold">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
+    <p class="font-bold text-lg">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
     <div class="flex justify-between items-center gap-8">
-      <SearchWithIcon hint="Search" class="hidden md:flex">
+      <SearchWithIcon hint="Search" class="hidden md:flex" v-show="showSearchBar">
         <ion-icon name="search"></ion-icon>
       </SearchWithIcon>
 
-      <div class="flex gap-2 relative">
+      <div class="flex md:gap-2 gap-6 relative">
         <ion-icon
           name="notifications"
           @click="openNotificationBar = !openNotificationBar"
         ></ion-icon>
         <ion-icon name="person" @click="openProfileBar = !openProfileBar"></ion-icon>
 
-        <ion-icon name="menu" class="block md:hidden"></ion-icon>
+        <ion-icon name="menu" class="block md:hidden" @click="passEvent"></ion-icon>
         <!-- Profile dropdown -->
         <div
           :class="[openProfileBar ? 'flex flex-col' : 'hidden']"
-          class="absolute shadow-lg w-[250px] h-[250px] top-8 left-[-210px] bg-white py-6 px-3 flex flex-col rounded-lg gap-8"
+          class="absolute z-10 shadow-lg w-[250px] h-[250px] top-8 left-[-210px] bg-white py-6 px-3 flex flex-col rounded-lg gap-8"
         >
           <div class="flex justify-between">
             <h4 class="text-sm font-bold">Profile</h4>
           </div>
           <div class="flex flex-col gap-5 px-4">
-            <div class="flex justify-between items-center">
+            <router-link
+              to="/freelancer/dashboard/profile/"
+              class="flex justify-between items-center"
+            >
               <p class="font-bold text-sm">Goto my profile</p>
               <ion-icon name="caret-forward-outline"></ion-icon>
-            </div>
-            <div class="flex justify-between items-center">
+            </router-link>
+            <router-link
+              to="/freelancer/dashboard/profile/gigs/"
+              class="flex justify-between items-center"
+            >
               <p class="font-bold text-sm">My gigs profile</p>
               <ion-icon name="caret-forward-outline"></ion-icon>
-            </div>
-            <div class="flex justify-between items-center">
+            </router-link>
+            <router-link class="flex justify-between items-center">
               <p class="font-bold text-sm">Switch to search for talent</p>
               <ion-icon name="caret-forward-outline"></ion-icon>
-            </div>
-            <div class="flex justify-between items-center">
+            </router-link>
+            <router-link to="/login/" class="flex justify-between items-center">
               <p class="text-red-600 font-bold text-sm">Logout</p>
               <ion-icon name="caret-forward-outline" class="text-red-600"></ion-icon>
-            </div>
+            </router-link>
           </div>
         </div>
 
         <!-- Notification dropdown -->
         <div
           :class="[openNotificationBar ? 'flex flex-col' : 'hidden']"
-          class="absolute shadow-lg w-full md:w-[420px] h-[200px] top-8 left-[-380px] bg-white py-3 px-2 flex flex-col rounded-lg gap-5"
+          class="absolute z-10 shadow-lg w-[320px] md:w-[420px] h-[200px] top-8 left-[-240px] md:left-[-380px] bg-white py-3 px-2 flex flex-col rounded-lg gap-5"
         >
           <div class="flex justify-between">
             <h4 class="text-sm font-bold">Notifications</h4>
@@ -99,8 +105,19 @@ export default {
   },
   props: {
     msg: String,
+    showSearchBar: {
+      type: Boolean,
+      default() {
+        return true;
+      },
+    },
   },
   components: { SearchWithIcon },
+  methods: {
+    passEvent() {
+      this.$emit("toggleBar");
+    },
+  },
 };
 </script>
 

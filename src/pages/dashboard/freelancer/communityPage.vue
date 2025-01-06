@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader msg="Community" />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader msg="Community" @toggleBar="togglebar($event)" />
     <div class="flex flex-col gap-4 p-2 md:flex-row md:items-center">
       <router-link to="#">
         <h5

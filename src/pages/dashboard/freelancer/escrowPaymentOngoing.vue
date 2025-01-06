@@ -1,6 +1,6 @@
 <template>
-  <DashBoardComponentProvider>
-    <DashboardHeader />
+  <DashBoardComponentProvider v-slot="{ togglebar }">
+    <DashboardHeader @toggleBar="togglebar($event)"/>
     <div class="w-full p-2">
       <router-link
         to="/freelancer/dashboard/"
