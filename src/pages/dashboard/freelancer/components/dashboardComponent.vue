@@ -70,11 +70,6 @@
           </li>
         </ul>
       </div>
-      <div
-        :class="[openBar ? 'w-full' : 'w-0']"
-        class="fixed z-[-1] h-full top-0 left-0"
-        @click="openBar = !openBar"
-      ></div>
     </div>
     <!-- Small Screen -->
     <div
@@ -147,6 +142,11 @@
           </li>
         </ul>
       </div>
+      <div
+        :class="[openBar ? 'w-full' : 'w-0']"
+        class="fixed z-[-1] h-full top-0 left-0"
+        @click="openBar = !openBar"
+      ></div>
     </div>
 
     <div class="flex-1 flex flex-col overflow-y-auto">
@@ -159,7 +159,7 @@ export default {
   name: "DashBoardComponentProvider",
   data() {
     return {
-      openBar: true,
+      openBar: false,
     };
   },
   methods: {
