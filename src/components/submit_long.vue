@@ -1,9 +1,9 @@
 <template>
-  <button>
-    <router-link to="/freelancer/dashboard/">
+  <router-link to="/freelancer/dashboard/">
+    <button>
       {{ msg }}
-    </router-link>
-  </button>
+    </button>
+  </router-link>
 </template>
 <script>
 export default {
