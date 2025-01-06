@@ -83,9 +83,4 @@ export default {
   },
 };
 </script>
-<style scoped>
-img {
-  height: 58px;
-  width: auto;
-}
-</style>
+<style scoped></style>

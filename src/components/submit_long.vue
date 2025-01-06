@@ -1,6 +1,8 @@
 <template>
   <button>
-    {{ msg }}
+    <router-link to="/freelancer/dashboard/">
+      {{ msg }}
+    </router-link>
   </button>
 </template>
 <script>

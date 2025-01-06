@@ -12,7 +12,7 @@
       "
     >
       <router-link to="/" class="font-bold">
-        <img src="/logo.png" alt="" class="w-32 h-32" />
+        <img src="/Gigitright White PNG.png" alt="" class="w-32 h-32" />
       </router-link>
       <img
         src="/9555fa124c260622828367f7a198a7c8.png"
