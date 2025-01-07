@@ -12,7 +12,7 @@
 
       <!-- Charts -->
       <AdminChart2 />
-      
+
       <div class="flex gap-8 items-center my-4">
         <div class="flex gap-3 items-center">
           <p class="text-xs font-medium">Rate of grifitis to dollars</p>
@@ -121,10 +121,10 @@
 </template>
 
 <script>
-import AdminChart2 from "./components/adminChart2.vue";
 import DashBoardComponentProvider from "./components/dashboardComponent.vue";
 import DashboardHeader from "./components/dashboardHeader.vue";
 import TopFrame from "./components/TopFrame.vue";
+import AdminChart2 from "./components/AdminChart2.vue";
 
 export default {
   name: "AdminWallet",
