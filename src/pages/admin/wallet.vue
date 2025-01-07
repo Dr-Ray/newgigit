@@ -12,6 +12,7 @@
 
       <!-- Charts -->
       <AdminChart2 />
+      
       <div class="flex gap-8 items-center my-4">
         <div class="flex gap-3 items-center">
           <p class="text-xs font-medium">Rate of grifitis to dollars</p>

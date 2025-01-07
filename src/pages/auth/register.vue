@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="mt-auto">
-          <SubmitButton msg="Login" background="#0f0" color="#eee" />
+          <SubmitButton msg="Register" background="#0f0" color="#eee" />
           <p class="text-center">
             Already have an account?
             <router-link to="/login" class="font-bold" style="color: #0071ce">

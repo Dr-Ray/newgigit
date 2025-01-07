@@ -61,6 +61,7 @@
         </div>
       </div>
     </div>
+    
     <div
       class="w-full rounded-2xl border border-solid border-[#E0E0E0] p-4 flex flex-col gap-4"
     >
@@ -109,6 +110,7 @@
         </div>
       </div>
     </div>
+    
     <div
       class="rounded-2xl border border-solid border-[#E0E0E0] p-4 flex flex-col justify-between min-w-[210px]"
     >
@@ -158,7 +160,7 @@ import Barchart from "../chart/barchart.vue";
 import Donoughtchart from "../chart/donoughtchart.vue";
 import Linechart from "../chart/linechart.vue";
 export default {
-  name: "AdminChart1",
+  name: "AdminChart2",
   components: {
     Barchart,
     Linechart,
