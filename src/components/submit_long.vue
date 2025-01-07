@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/freelancer/dashboard/">
+  <router-link to="/admin/dashboard/">
     <button>
       {{ msg }}
     </button>
