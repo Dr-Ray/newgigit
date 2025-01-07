@@ -11,7 +11,7 @@
       <TopFrame />
 
       <!-- Charts -->
-      <AdminChart />
+      <AdminChart linkUrl="#"/>
 
       <!-- Table -->
       <AdminDataTable />

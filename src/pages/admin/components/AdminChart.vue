@@ -15,7 +15,9 @@
         </div>
       </div>
       <div class="min-h-[220px]">
+        <router-link :to="linkUrl">
         <Barchart />
+        </router-link>
       </div>
       <div class="bottum flex items-center gap-8 overflow-x-auto">
         <div class="flex gap-3">
@@ -68,7 +70,9 @@
         </div>
       </div>
       <div class="min-h-[220px]">
-        <Linechart />
+        <router-link :to="linkUrl">
+          <Linechart />
+        </router-link>
       </div>
       <div class="bottum flex gap-4">
         <div class="flex gap-3">
@@ -121,6 +125,9 @@ export default {
     Barchart,
     Linechart,
   },
+  props:{
+    linkUrl:String
+  }
 };
 </script>
 

@@ -11,7 +11,7 @@
       <TopFrame />
 
       <!-- Charts -->
-      <AdminChart />
+      <AdminChart linkUrl="/admin/dashboard/buyer/single/1"/>
 
       <!-- Table -->
       <AdminDataTable />
