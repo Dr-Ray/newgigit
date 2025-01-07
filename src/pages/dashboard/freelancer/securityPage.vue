@@ -1,7 +1,10 @@
 <template>
   <DashBoardComponentProvider v-slot="{ togglebar }">
-    <DashboardHeader msg="Security" :showSearchBar="false" @toggleBar="togglebar($event)"/>
-
+    <DashboardHeader
+      msg="Security"
+      :showSearchBar="false"
+      @toggleBar="togglebar($event)"
+    />
     <div class="flex justify-between px-4 pt-8 md:w-4/5">
       <p
         :class="[tab1 ? 'text-[#0071ce] border-b-2 border-[#0071ce]' : '']"

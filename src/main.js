@@ -68,6 +68,16 @@ import CompanyUserProfileGigs from "./pages/dashboard/company/userProfileGigs.vu
 import CompanyUserProfileGigsHistory from "./pages/dashboard/company/userProfileGigsHistory.vue";
 import CompanyUserPortfolio from "./pages/dashboard/company/userPortfolio.vue";
 
+import AdminHome from './pages/admin/home.vue';
+import AdminWallet from './pages/admin/wallet.vue';
+import AdminAnnoumcement from './pages/admin/announcement.vue';
+import AdminPaymentMethod from './pages/admin/payment.vue';
+import AdminSendMail from './pages/admin/mail.vue';
+import AdminBuyerMgt from './pages/admin/buyer.vue';
+import AdminSellerMgt from './pages/admin/seller.vue';
+import AdminBuyerSingle from './pages/admin/buyersSingle.vue';
+import AdminSellerSingle from './pages/admin/sellersSingle.vue';
+
 import PageNotFound from './pages/404.vue';
 
 const routes = [
@@ -145,6 +155,19 @@ const routes = [
   { path: "/company/dashboard/profile/gigs/history/", component: CompanyUserProfileGigsHistory },
 
   { path: "/company/dashboard/portfolio/", component: CompanyUserPortfolio },
+
+  // Admin page links
+  { path: "/admin/dashboard/", component: AdminHome },
+  { path: "/admin/dashboard/wallet/", component: AdminWallet },
+  { path: "/admin/dashboard/seller-mgt/", component: AdminSellerMgt },
+  { path: "/admin/dashboard/buyer-mgt/", component: AdminBuyerMgt },
+  { path: "/admin/dashboard/announcement", component: AdminAnnoumcement },
+  { path: "/admin/dashboard/payment/", component: AdminPaymentMethod },
+  { path: "/admin/dashboard/mail", component: AdminSendMail },
+  
+  { path: "/admin/dashboard/sellers/single/:id", component: AdminSellerSingle },
+  { path: "/admin/dashboard/buyer/single/:id", component: AdminBuyerSingle },
+
 
   // Error page / Not found 
   { path: "/:pathMatch(.*)*", component: PageNotFound }
