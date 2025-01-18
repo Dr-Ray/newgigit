@@ -11,9 +11,10 @@
       </div>
     </div>
     <div class="flex flex-col items-center">
-      <div>
+      <router-link class="flex gap-2 items-center" to="/freelancer/dashboard/profile/">
         <p class="text-xs text-red-700">Complete Profile</p>
-      </div>
+        <ion-icon name="caret-forward" class="text-red-700"></ion-icon>
+      </router-link>
       <img src="/Frame18.png" class="h-20 w-20 rounded-full" alt="" />
     </div>
   </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="div mt-4">
+  <router-link :to="lnk" class="div mt-4">
     <div
       class="w-full rounded-xl shadow-md flex flex-col gap-5 py-4 px-2"
       style="background-color: #cce3f50d"
@@ -19,7 +19,7 @@
         <button class="mt-4">Check it out</button>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -30,6 +30,7 @@ export default {
     business: String,
     subHeading: String,
     heading: String,
+    lnk:String
   },
 };
 </script>

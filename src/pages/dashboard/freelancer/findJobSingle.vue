@@ -3,7 +3,7 @@
     <DashboardHeader msg="Find a Job" @toggleBar="togglebar($event)" />
     <div class="w-full px-3 py-2">
       <router-link
-        to="/freelancer/dashboard/"
+        to="/freelancer/dashboard/find-a-job/"
         class="text-sm font-medium p-2 rounded-xl w-full my-2 flex gap-3 items-center"
         style="color: #0071ce; background-color: #d4a21b33"
       >
@@ -24,7 +24,7 @@
               <div class="flex items-center gap-7">
                 <div class="flex items-center gap-1">
                   <img
-                    src="/9555fa124c260622828367f7a198a7c8.png"
+                    src="/830dc8455e8050e59d7edf7f5100f751.png"
                     class="h-8 w-8 rounded-full object-cover"
                     alt=""
                   />
@@ -32,7 +32,7 @@
                 </div>
                 <div class="flex items-center gap-1">
                   <ion-icon
-                    name="caret-forward-outline"
+                    name="location"
                     class="text-[#909090]"
                   ></ion-icon>
                   <p class="font-extralight">Nigeria</p>
@@ -81,7 +81,7 @@
               <p class="font-bold text-[#606060] text-xs">Price : 30,000</p>
             </div>
             <div class="flex items-center gap-1">
-              <ion-icon name="bookmark-outline" class="text-[#909090]"></ion-icon>
+              <ion-icon name="bookmark" class="text-[#909090]"></ion-icon>
               <p class="font-bold text-[#606060] text-xs">Level : Senior</p>
             </div>
             <div class="flex items-center gap-1">
@@ -127,19 +127,18 @@
           </div>
         </div>
 
-        <div class="border-[#90909052] w-full" style="border-width: 1px"></div>
+        <div class="border-[#90909052] w-full border" style="border-width: 1px"></div>
         <div class="flex flex-col gap-6 p-4">
           <p class="font-bold text-sm text-[#606060]">Activities</p>
           <div class="flex items-center gap-7">
-            <button>Apply</button>
-            <button>Save Job</button>
+            <button class="px-8">Apply</button>
+            <button class="border-2 border-solid border-[#0071ce] text-[#0071ce] bg-white">Save Job</button>
           </div>
         </div>
       </div>
       <div class="w-2/5 my-4">
         <h5
-          class="text-sm font-medium p-2 rounded-xl w-fit my-8"
-          style="color: #0071ce; background-color: #d4a21b33"
+          class="text-sm font-medium p-2 rounded-xl w-fit my-8 text-[#0071ce] bg-[#d4a21b33]"
         >
           Related opportunity
         </h5>
@@ -183,7 +182,7 @@
             <div class="wdgt-main">
               <div class="leading-6">
                 How do we feel about Customer Success Manager in tech as an exit?
-                <p class="text-sm font-medium pr-4" style="color: #0071ce">See more</p>
+                <p class="text-sm font-medium pr-4 text-[#0071ce]">See more</p>
               </div>
               <p
                 class="text-sm mt-4 font-medium p-2 rounded-full w-fit bg-[#d4a21b33] text-[#0071ce]"

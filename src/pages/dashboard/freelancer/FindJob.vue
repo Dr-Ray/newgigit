@@ -50,13 +50,11 @@
         </div>
         <button
           class="py-4"
-          style="
-            border-top-right-radius: 50px;
+          style="border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
-            height: 61px;
-          "
+            height: 61px;"
         >
           Search
         </button>
@@ -65,6 +63,7 @@
     <div class="flex px-3 py-2 gap-2">
       <div class="w-3/5 my-4">
         <TaskLibs
+          lnk='/freelancer/dashboard/find-a-job/single/1'
           heading="Started 2 days ago"
           subHeading="Ux design landing pages"
           business="Prime movies cop"
@@ -72,6 +71,7 @@
           payment="50% payment done"
         />
         <TaskLibs
+          lnk='/freelancer/dashboard/find-a-job/single/1'
           heading="Started 2 days ago"
           subHeading="Ux design landing pages"
           business="Prime movies cop"
@@ -87,12 +87,14 @@
           Saved Jobs
         </h5>
         <TaskLibsRight
+        lnk='/freelancer/dashboard/find-a-job/single/1'
           heading="Started 20 days ago"
           subHeading="Ux design landing pages"
           business="Prime movies cop"
           msg="How do we feel about Customer Success Manager in tech as an exit? My gut tells me it’s chill and decently paying but kinda men See more"
         />
         <TaskLibsRight
+        lnk='/freelancer/dashboard/find-a-job/single/1'
           class="mt-3"
           heading="Started 20 days ago"
           subHeading="Ux design landing pages"
