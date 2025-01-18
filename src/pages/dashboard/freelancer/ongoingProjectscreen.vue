@@ -1,7 +1,7 @@
 <template>
   <DashBoardComponentProvider  v-slot="{ togglebar }">
     <DashboardHeader @toggleBar="togglebar($event)"/>
-    <div class="w-full p-2">
+    <div class="w-full py-2 px-8">
       <router-link
         to="/freelancer/dashboard/"
         class="text-sm font-medium p-2 rounded-xl w-full my-8 flex gap-3 items-center"
@@ -25,7 +25,7 @@
         <p class="font-extralight">Start date 19th, august 2024</p>
       </div>
     </div>
-    <div class="flex px-3 py-2 gap-2">
+    <div class="flex px-8 py-2 gap-2">
       <div class="w-3/5 my-4">
         <div class="rounded-2xl w-full shadow-xl px-4 py-2 flex flex-col gap-5 my-3">
           <div class="flex items-center gap-3">
@@ -37,7 +37,9 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <button>Mark as done</button>
+            <router-link to="/freelancer/dashboard/ongoing/markasdone/1">
+              <button>Mark as done</button>
+            </router-link>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-2 flex flex-col gap-5 my-3">
@@ -50,7 +52,9 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <button>Mark as done</button>
+            <router-link to="/freelancer/dashboard/ongoing/markasdone/1">
+              <button>Mark as done</button>
+            </router-link>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-2 flex flex-col gap-5 my-3">
@@ -63,7 +67,9 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <button>Mark as done</button>
+            <router-link to="/freelancer/dashboard/ongoing/markasdone/1">
+              <button>Mark as done</button>
+            </router-link>
           </div>
         </div>
         <div class="rounded-2xl w-full shadow-xl px-4 py-6 flex flex-col gap-5 my-3">
@@ -76,7 +82,9 @@
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>
             </div>
-            <button>Mark as done</button>
+            <router-link to="/freelancer/dashboard/ongoing/markasdone/1">
+              <button>Mark as done</button>
+            </router-link>
           </div>
         </div>
       </div>

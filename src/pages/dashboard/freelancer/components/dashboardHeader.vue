@@ -1,6 +1,6 @@
 <template>
   <div class="py-2 px-4 flex justify-between items-center">
-    <p class="font-bold text-lg">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
+    <p class="font-bold text-xl">{{ msg ? msg : "Hello, Virtue Andrew" }}</p>
     <div class="flex justify-between items-center gap-8">
       <SearchWithIcon hint="Search" class="hidden md:flex" v-show="showSearchBar">
         <ion-icon name="search"></ion-icon>
@@ -31,7 +31,7 @@
               <ion-icon name="caret-forward-outline"></ion-icon>
             </router-link>
             <router-link
-              to="/freelancer/dashboard/profile/gigs/"
+              to="/freelancer/dashboard/profile/gigs/history/"
               class="flex justify-between items-center"
             >
               <p class="font-bold text-sm">My gigs profile</p>

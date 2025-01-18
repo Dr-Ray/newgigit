@@ -11,7 +11,7 @@
         <p>Go back</p>
       </router-link>
       <div class="wdgt-tops flex flex-col gap-1">
-        <h3 class="font-bold text-xl mb-2">Ux design landing page</h3>
+        <h3 class="font-bold text-xl mb-3">Ux design landing page</h3>
         <!-- <p class="font-extralight">Start date 19th, august 2024</p> -->
       </div>
     </div>
@@ -34,7 +34,7 @@
             be used for a variety of purposes, such as hosting a Q&A, giving a lecture, or
             creating a podcast. 
           </p>
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between mt-3">
             <div class="flex items-center gap-2">
               <div class="text-xs">Start date: 19th, august 2024</div>
               <div class="text-xs">Start date: 19th, august 2024</div>

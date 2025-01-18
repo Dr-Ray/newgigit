@@ -7,47 +7,39 @@
         <div class="flex flex-col gap-8">
           <div
             class="rounded-full w-full bg-white flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3] "
-:class="{ 'input-error': errors.name }"
-          >
+            :class="{ 'input-error': errors.name }">
             <ion-icon name="person-circle-outline"></ion-icon>
             <input type="text" placeholder="Name" class="w-full px-2 py-1" name="name" />
           </div>
-          <div 
+          <div
             class="rounded-full w-full bg-white flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3] "
-:class="{ 'input-error': errors.email }"
-          >
+            :class="{ 'input-error': errors.email }">
             <ion-icon name="mail"></ion-icon>
-            <input
-              type="email"
-              placeholder="Email address"
-              class="w-full px-2 py-1"
-              name="email"
-
-            />
+            <input type="email" placeholder="Email address" class="w-full px-2 py-1" name="email" />
           </div>
           <div
             class="rounded-full w-full bg-white flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3] "
-:class="{ 'input-error': errors.country }"
-          >
+            :class="{ 'input-error': errors.country }">
             <ion-icon name="lock-closed"></ion-icon>
-            <input type="text" placeholder="Country" class="w-full px-2 py-1" name="country" v-model="country"/>
+            <input type="text" placeholder="Country" class="w-full px-2 py-1" name="country" v-model="country" />
           </div>
           <div
             class="rounded-full w-full flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3]"
-            :class="{ 'input-error': errors.password }"
-          >
+            :class="{ 'input-error': errors.cpassword }">
             <ion-icon name="lock-closed"></ion-icon>
-            <input
-              placeholder="password"
-              class="w-full px-2 py-1 rounded-lg border-0 focus:border-0"
-              type="password"
-              name="password"
-              v-model="password"
-            />
+            <input placeholder="password" class="w-full px-2 py-1 rounded-lg border-0 focus:border-0" type="password"
+              name="password" v-model="password" />
+          </div>
+          <div
+            class="rounded-full w-full flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3]"
+            :class="{ 'input-error': errors.cpassword }">
+            <ion-icon name="lock-closed"></ion-icon>
+            <input placeholder="Confirm password" class="w-full px-2 py-1 rounded-lg border-0 focus:border-0" type="password"
+              name="password" v-model="cpassword" />
           </div>
         </div>
         <div class="mt-auto">
-          <SubmitButton msg="Register" background="#0f0" color="#eee" :loading="loading"/>
+          <SubmitButton msg="Register" background="#0f0" color="#eee" :loading="loading" />
           <p class="text-center">
             Already have an account?
             <router-link to="/login" class="font-bold" style="color: #0071ce">
@@ -74,6 +66,7 @@ export default {
       email: "",
       country: "",
       password: "",
+      cpassword: "",
       loading: false,
       errorMessage: null,
       errors: {},
@@ -86,33 +79,40 @@ export default {
       this.errorMessage = null;
 
       // Basic validation
+      if (!this.name) this.errors.name = "Name is required.";
       if (!this.email) this.errors.email = "Email is required.";
+      if (!this.country) this.errors.country = "Country is required.";
       if (!this.password) this.errors.password = "Password is required.";
-
+      if (!this.cpassword) this.errors.cpassword = "Please confirm password.";
+      if (this.password !== this.cpassword) this.errors.password = "Password does not match" 
+      
       if (Object.keys(this.errors).length) return;
 
       this.loading = true;
       try {
-        const response = await fetch('https://api.gigitright.com/api/v1/login', {
+        const response = await fetch('https://api.gigitright.com/api/v1/register', {
           method: "POST",
           body: JSON.stringify({
+            name: this.name,
             email: this.email,
-            password: this.password
+            country: this.country, 
+            password: this.password,
+            password_confirmation: this.password
           })
         });
         const dta = response.json();
-        if(response.ok) {
-          if(dta.status == 200) {
+        if (response.ok) {
+          if (dta.status == 200) {
             this.$router.push({
-              path: '/freelancer/dashboard/', 
+              path: '/verify/email/',
               params: {
                 token: response.data.token,
               }
             });
-          }else{
+          } else {
             this.error = response.message;
           }
-        }else{
+        } else {
           this.error = 'An error occurred: ' + err.message;
         }
       } catch (err) {

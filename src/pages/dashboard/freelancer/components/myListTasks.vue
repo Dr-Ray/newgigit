@@ -1,8 +1,7 @@
 <template>
-  <router-link to="/freelancer/dashboard/ongoing/1" class="div mt-4">
+  <router-link :to="lnk" class="div mt-4">
     <div
-      class="w-full rounded-xl shadow-md flex flex-col gap-5 py-4 px-2"
-      style="background-color: #cce3f50d"
+      class="w-full rounded-xl shadow-md flex flex-col gap-5 py-4 px-8 bg-[#cce3f50d]"
     >
       <div class="wdgt-tops flex flex-col gap-4">
         <p class="font-light">{{ heading }}</p>
@@ -16,8 +15,7 @@
           {{ msg }}
         </p>
         <p
-          class="text-sm font-medium p-2 rounded-full w-fit"
-          style="color: #0071ce; background-color: #d4a21b33"
+          class="text-sm font-medium p-2 rounded-full w-fit bg-[#d4a21b33] text-[#0071ce]"
         >
           {{ payment }}
         </p>
@@ -35,6 +33,7 @@ export default {
     business: String,
     subHeading: String,
     heading: String,
+    lnk:String
   },
 };
 </script>
