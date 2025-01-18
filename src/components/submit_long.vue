@@ -1,14 +1,16 @@
 <template>
-  <router-link to="/admin/dashboard/">
-    <button>
-      {{ msg }}
+  <!-- <router-link to="/admin/dashboard/"> -->
+    <button type="submit" class="btn" :disabled="loading">
+      <span v-if="loading" class="loader"></span>
+      <span v-else>{{ msg }}</span>
     </button>
-  </router-link>
+  <!-- </router-link> -->
 </template>
 <script>
 export default {
   name: "SubmitButton",
   props: {
+    loading:Boolean,
     msg: String,
     color: String,
     background: String,

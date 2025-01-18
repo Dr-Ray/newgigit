@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import "./index.css";
 import "./style.css";
 import App from "./App.vue";
-import { createWebHistory, createRouter } from "vue-router";
+import { createWebHistory, createRouter } from "vue-router"; 
 
 import Landing from "./pages/landing.vue";
 import Login from "./pages/auth/login.vue";
