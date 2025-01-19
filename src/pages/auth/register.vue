@@ -3,7 +3,7 @@
     <div class="px-4 py-8 h-full overflow-y-auto">
       <p class="font-bold text-4xl">Create an account</p>
       <p>Connection between Companies and Freelancers starts from here</p>
-      <form class="flex flex-col justify-evenly h-[400px] mt-8">
+      <form class="flex flex-col justify-evenly h-[400px] mt-8"  @submit.prevent="login">
         <div class="flex flex-col gap-8">
           <div
             class="rounded-full w-full bg-white flex gap-4 p-2 items-center  bg-[#cce3f533] border border-solid border-[#d3d3d3] "
@@ -90,7 +90,7 @@ export default {
 
       this.loading = true;
       try {
-        const response = await fetch('https://api.gigitright.com/api/v1/register', {
+        const response = await fetch('https://api.gigitright.com/api/v1/register/', {
           method: "POST",
           body: JSON.stringify({
             name: this.name,

@@ -73,7 +73,7 @@ export default {
 
       this.loading = true;
       try {
-        const response = await fetch('https://api.gigitright.com/api/v1/login', {
+        const response = await fetch('https://api.gigitright.com/api/v1/login/', {
           method: "POST",
           body: JSON.stringify({
             email: this.email,

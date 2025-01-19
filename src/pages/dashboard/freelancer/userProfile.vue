@@ -128,7 +128,7 @@
           <div>
             <p class="font-medium text-xs">Resume</p>
             <div
-              class="mt-8 bg-[#CCE3F533] min-h-[90px] rounded-3xl flex p-4 justify-between"
+              class="mt-8 bg-[#CCE3F533] min-h-[90px] border border-solid rounded-3xl flex p-4 justify-between items-center"
             >
               <ion-icon name="cloud-upload"></ion-icon>
               <ion-icon name="ellipsis-vertical-outline"></ion-icon>
